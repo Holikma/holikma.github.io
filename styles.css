@@ -5,29 +5,57 @@ body{
 #Container {
     box-sizing: border-box;
     width: 90%;
-    margin:10px 5%;
-    height: 50px;
+    margin-top:10px;
+    margin-inline: 5%;
+    height: 50px auto;
     border:solid red;
-    padding: 10px 3%;
+    padding: 10px 1%;
 }
 
 #Container .navbar{
     box-sizing: border-box;
-
     border:solid blue;
+    height: auto;
+    text-align: center;
 }
+
+#Container .navbar a{
+    color:pink;
+    padding: 50px;
+    display: inline;
+}
+
+
+
+
+
+
 
 #box-box {
     box-sizing: border-box;
     width: 90%;
-    height: 400px;
+    height: 500px;
     border:solid red;
-    margin: 5%;
-    padding: 3%;
+    margin-top:30px;
+    margin-inline: 5%;
+    padding: 10px;
 }
+
 #box-box .photo-box{
+    float:left;
     box-sizing: border-box;
-    width: 40%;
+    width: 30%;
     height: 100%;
     border:solid blue;
+    
+}
+
+#box-box .text-box{
+    float:right;
+    width: 60%;
+    height: 100%;
+
+    box-sizing: border-box;
+    border:solid green;
+    
 }

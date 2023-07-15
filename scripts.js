@@ -1,11 +1,12 @@
-function SendData(){
-    var input = document.getElementById("input_field").value;
-    console.log(input);
-}
+var counterContainer = document.querySelector(".website-counter");
+var visitCount = localStorage.getItem("page_view");
 
-function Background(){
-    var scroll_Position = window.scrollY;
-    if (scroll_Position > 10){
-    document.body.style.backgroundColor = "rgb(0, 255, 0)";
-    }
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
 }
+counterContainer.innerHTML = visitCount;
+
